@@ -1,0 +1,225 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natrix Visuals | Motion &amp; Video</title>
+    <link rel="icon" type="image/png" href="Logo_Black.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <style>
+        .tile {
+            position: absolute;
+            width: 192px;
+            height: 192px;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            background: #fff;
+            overflow: hidden;
+            transform: rotate(0deg) translate(0, 0);
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .tile img { width: 100%; height: 100%; object-fit: cover; padding: 6px; border-radius: 0.75rem; }
+        .tile-1 { z-index: 80; transform-origin: bottom right; }
+        .tile-2 { z-index: 70; transform-origin: bottom right; }
+        .tile-3 { z-index: 60; transform-origin: bottom right; }
+        .tile-4 { z-index: 50; transform-origin: bottom center; }
+        .tile-5 { z-index: 40; transform-origin: bottom left; }
+        .tile-6 { z-index: 30; transform-origin: bottom left; }
+        .tile-7 { z-index: 20; transform-origin: bottom left; }
+        .tile-8 { z-index: 10; transform-origin: bottom left; }
+        .tile-1.spread { transform: rotate(-12deg) translate(-375px, -30px); }
+        .tile-2.spread { transform: rotate(6deg)   translate(-245px, -6px);  }
+        .tile-3.spread { transform: rotate(-4deg)  translate(-120px, 12px);  }
+        .tile-4.spread { transform: rotate(8deg)   translate(-5px,   -8px);  }
+        .tile-5.spread { transform: rotate(-7deg)  translate(110px,  18px);  }
+        .tile-6.spread { transform: rotate(5deg)   translate(230px, -10px);  }
+        .tile-7.spread { transform: rotate(-9deg)  translate(345px,   8px);  }
+        .tile-8.spread { transform: rotate(10deg)  translate(455px,  -25px); }
+        .tile-1:hover  { transform: rotate(-10deg) translate(-375px, -45px)  !important; }
+        .tile-2:hover  { transform: rotate( 6deg)  translate(-245px, -20px)  !important; }
+        .tile-3:hover  { transform: rotate(-2deg)  translate(-120px,  -1px)  !important; }
+        .tile-4:hover  { transform: rotate( 8deg)  translate(-5px,   -22px)  !important; }
+        .tile-5:hover  { transform: rotate(-5deg)  translate( 110px,   4px)  !important; }
+        .tile-6:hover  { transform: rotate( 5deg)  translate( 230px, -24px)  !important; }
+        .tile-7:hover  { transform: rotate(-7deg)  translate( 345px,  -5px)  !important; }
+        .tile-8:hover  { transform: rotate(10deg)  translate( 455px, -40px)  !important; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-zinc-800 selection:text-white" style="font-family: 'Inter', sans-serif;">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 backdrop-blur-md bg-zinc-950/80">
+      <img src="Logo_Black.png" alt="Natrix Visuals" class="h-8 w-8 rounded-sm">
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 px-6 max-w-7xl mx-auto flex flex-col items-center text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs font-medium text-zinc-400 mb-8 backdrop-blur-sm">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            Accepting aligned projects
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight text-white mb-6 max-w-4xl leading-tight">
+            Depth over volume.<br>Cinema over content.
+        </h1>
+
+        <p class="text-lg md:text-xl text-zinc-400 max-w-2xl font-normal mb-0">
+            Not a factory. A dedicated partner for teams who treat video as a medium for meaning — not just output.
+        </p>
+    </section>
+
+    <!-- BTS Image Tiles -->
+    <section class="py-8 flex justify-center items-center" style="overflow: visible;">
+        <div class="relative flex items-center justify-center" style="width: 256px; height: 256px;">
+            <div class="tile tile-1">
+                <img src="compressed/IMG20220730181318.webp" alt="On set">
+            </div>
+            <div class="tile tile-2">
+                <img src="compressed/IMG20221013110040.webp" alt="On set">
+            </div>
+            <div class="tile tile-3">
+                <img src="compressed/IMG_20211113_134544.webp" alt="Behind the scenes">
+            </div>
+            <div class="tile tile-4">
+                <img src="compressed/WildcatBTS.webp" alt="Behind the lens">
+            </div>
+            <div class="tile tile-5">
+                <img src="compressed/IMG20230306191740.webp" alt="Location shoot">
+            </div>
+            <div class="tile tile-6">
+                <img src="compressed/IMG20230418110822.webp" alt="On location">
+            </div>
+            <div class="tile tile-7">
+                <img src="compressed/IMG20230421112111.webp" alt="Production day">
+            </div>
+            <div class="tile tile-8">
+                <img src="compressed/IMG20230427134614.webp" alt="Behind the scenes">
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section id="work" class="py-24 px-6 max-w-7xl mx-auto border-t border-zinc-800/30">
+        <div class="flex items-end justify-between mb-12">
+            <h2 class="text-2xl font-medium tracking-tight text-white">Selected Work</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-16">
+            <!-- Project 1 — Vimeo -->
+            <div>
+                <div class="aspect-video bg-zinc-900 rounded-xl border border-zinc-800/50 overflow-hidden mb-5">
+                    <iframe src="https://player.vimeo.com/video/1079459823?h=a392dd7d42&title=0&byline=0&portrait=0&color=ffffff&autoplay=0" class="w-full h-full" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-white tracking-tight mb-1">Trading Animation</h3>
+                    <p class="text-sm text-zinc-500 font-normal">Motion Design</p>
+                </div>
+            </div>
+
+            <!-- Project 2 — Vimeo -->
+            <div class="md:mt-12">
+                <div class="aspect-video bg-zinc-900 rounded-xl border border-zinc-800/50 overflow-hidden mb-5">
+                    <iframe src="https://player.vimeo.com/video/1079461358?h=32dc89a2fc&title=0&byline=0&portrait=0&color=ffffff&autoplay=0" class="w-full h-full" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-white tracking-tight mb-1">Hello, my name is Jenny</h3>
+                    <p class="text-sm text-zinc-500 font-normal">Motion Design</p>
+                </div>
+            </div>
+
+            <!-- Project 3 — Vimeo -->
+            <div>
+                <div class="aspect-video bg-zinc-900 rounded-xl border border-zinc-800/50 overflow-hidden mb-5">
+                    <iframe src="https://player.vimeo.com/video/1168809074?title=0&byline=0&portrait=0&badge=0&autopause=0&autoplay=0&player_id=0&app_id=58479" class="w-full h-full" frameborder="0" allow="fullscreen; picture-in-picture; clipboard-write; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-white tracking-tight mb-1">Wildcat Piercing Campaign</h3>
+                    <p class="text-sm text-zinc-500 font-normal">Video Production</p>
+                </div>
+            </div>
+
+            <!-- Project 4 — Vimeo -->
+            <div class="md:mt-12">
+                <div class="aspect-video bg-zinc-900 rounded-xl border border-zinc-800/50 overflow-hidden mb-5">
+                    <iframe src="https://player.vimeo.com/video/1168808941?title=0&byline=0&portrait=0&badge=0&autopause=0&autoplay=0&player_id=0&app_id=58479" class="w-full h-full" frameborder="0" allow="fullscreen; picture-in-picture; clipboard-write; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-white tracking-tight mb-1">"Nasty" Tattoo Artist</h3>
+                    <p class="text-sm text-zinc-500 font-normal">Video Production</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethos Section -->
+    <section id="ethos" class="py-32 px-6 relative mt-10">
+        <div class="absolute inset-0 bg-zinc-900/20 border-y border-zinc-800/30"></div>
+        <div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row gap-16 items-start">
+            <div class="md:w-1/3">
+                <h2 class="text-2xl font-medium tracking-tight text-white mb-6">The Ethos</h2>
+                <div class="w-12 h-12 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center">
+                    <iconify-icon icon="solar:target-linear" width="24" height="24" class="text-zinc-400" style="stroke-width: 1.5;"></iconify-icon>
+                </div>
+            </div>
+            <div class="md:w-2/3 max-w-2xl">
+                <p class="text-2xl md:text-3xl font-medium text-white leading-snug tracking-tight mb-8">
+                    I believe in depth over volume. My focus is strictly on projects that demand aesthetic precision and conceptual rigor.
+                </p>
+                <div class="space-y-6 text-base text-zinc-400 font-normal leading-relaxed">
+                    <p>
+                        By operating on an "aligned projects only" basis, I ensure every frame, transition, and keyframe receives obsessive attention. I am not a factory; I am a dedicated partner for brands that view video not as content, but as cinema.
+                    </p>
+                    <p>
+                        If your project requires a tailored, high-fidelity approach—where design thinking meets technical execution—we are likely a match.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-zinc-300 font-medium">
+            <div class="flex flex-col gap-3 p-6 rounded-xl bg-zinc-900/10 border border-zinc-800/40 hover:bg-zinc-900/40 hover:border-zinc-700/50 transition-all cursor-default group">
+                <iconify-icon icon="solar:videocamera-linear" width="28" height="28" class="text-zinc-500 group-hover:text-white transition-colors" style="stroke-width: 1.5;"></iconify-icon>
+                Cinematography
+            </div>
+            <div class="flex flex-col gap-3 p-6 rounded-xl bg-zinc-900/10 border border-zinc-800/40 hover:bg-zinc-900/40 hover:border-zinc-700/50 transition-all cursor-default group">
+                <iconify-icon icon="solar:play-circle-linear" width="28" height="28" class="text-zinc-500 group-hover:text-white transition-colors" style="stroke-width: 1.5;"></iconify-icon>
+                Motion Design
+            </div>
+            <div class="flex flex-col gap-3 p-6 rounded-xl bg-zinc-900/10 border border-zinc-800/40 hover:bg-zinc-900/40 hover:border-zinc-700/50 transition-all cursor-default group">
+                <iconify-icon icon="solar:box-linear" width="28" height="28" class="text-zinc-500 group-hover:text-white transition-colors" style="stroke-width: 1.5;"></iconify-icon>
+                3D Integration
+            </div>
+            <div class="flex flex-col gap-3 p-6 rounded-xl bg-zinc-900/10 border border-zinc-800/40 hover:bg-zinc-900/40 hover:border-zinc-700/50 transition-all cursor-default group">
+                <iconify-icon icon="solar:clapperboard-edit-linear" width="28" height="28" class="text-zinc-500 group-hover:text-white transition-colors" style="stroke-width: 1.5;"></iconify-icon>
+                Post-Production
+            </div>
+         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-6 border-t border-zinc-800/30">
+        <p class="text-center text-xs text-zinc-600 font-normal">© 2026 natrix-visuals. All rights reserved.</p>
+    </footer>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    window.addEventListener('load', () => {
+        setTimeout(() => document.querySelector('.tile-1').classList.add('spread'),  200);
+        setTimeout(() => document.querySelector('.tile-2').classList.add('spread'),  400);
+        setTimeout(() => document.querySelector('.tile-3').classList.add('spread'),  600);
+        setTimeout(() => document.querySelector('.tile-4').classList.add('spread'),  800);
+        setTimeout(() => document.querySelector('.tile-5').classList.add('spread'), 1000);
+        setTimeout(() => document.querySelector('.tile-6').classList.add('spread'), 1200);
+        setTimeout(() => document.querySelector('.tile-7').classList.add('spread'), 1400);
+        setTimeout(() => document.querySelector('.tile-8').classList.add('spread'), 1600);
+    });
+</script>
+</body></html>
